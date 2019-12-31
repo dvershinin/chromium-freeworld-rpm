@@ -137,14 +137,13 @@ BuildRequires:  pkgconfig(wayland-server)
 %endif
 
 #Python stuffs
+BuildRequires: python2-rpm-macros
 %if 0%{?bundlepylibs}
-	
 # Using bundled bits, do nothing.
 #This is needed for remove_bundled_libraries.py
 BuildRequires: /usr/bin/python2
 	
 %else
-BuildRequires: python2-rpm-macros
 BuildRequires: python2-beautifulsoup4
 BuildRequires: python2-lxml
 BuildRequires: python2-html5lib
