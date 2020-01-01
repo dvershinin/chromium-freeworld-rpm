@@ -10,7 +10,7 @@ defaults: &defaults
       - run:
           name: "Run the build itself: this will do rpmlint and check RPMs existence among other things."
           command: build
-          no_output_timeout: 120m
+          no_output_timeout: 1440m
       - persist_to_workspace:
           root: /output
           paths:
